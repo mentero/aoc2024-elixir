@@ -10,7 +10,7 @@ defmodule Day1 do
     |> String.split("\n")
     |> Stream.map(&String.trim/1)
     |> Stream.reject(&(&1 == ""))
-    |> Day1.parse_input()
+    |> parse_input()
   end
 
   def parse_input(input) do
