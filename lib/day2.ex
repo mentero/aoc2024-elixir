@@ -1,4 +1,14 @@
 defmodule AOC2024.Day2 do
+  # I might have overdone it a little. I wanted to avoid doing a loop like this:
+  #
+  #  Enum.map(0..(length(report) - 1), fn i ->
+  #    List.delete_at(report, i)
+  #  end)
+  #
+  # as I thought I could figure out which value to remove by checking the values during the processing.
+  # But I encountered various edge cases, like having `a == b` or that removing one of them will change the trend, etc.
+  # I covered all of the cases I could figure out, but was still a few examples (unknown to me at the time) short.
+  # That's why I ended up with the loop above, and some functions like `direction` are more elaborate than they should be.
   def input do
     "inputs/day_2"
     |> File.stream!()
