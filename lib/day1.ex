@@ -1,6 +1,6 @@
 defmodule AOC2024.Day1 do
   def input do
-    "inputs/day_1"
+    "inputs/day1"
     |> File.stream!()
     |> parse_input()
   end

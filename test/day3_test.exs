@@ -10,7 +10,7 @@ defmodule AOC2024.Day3Test do
     end
 
     test "input" do
-      stream = File.stream!("inputs/day_3", 1)
+      stream = File.stream!("inputs/day3", 1)
       assert Day3.part1(stream) == 179_571_322
     end
   end
@@ -23,7 +23,7 @@ defmodule AOC2024.Day3Test do
     end
 
     test "input" do
-      stream = File.stream!("inputs/day_3", 1)
+      stream = File.stream!("inputs/day3", 1)
       assert Day3.part2(stream) == 103_811_193
     end
   end

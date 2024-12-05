@@ -10,7 +10,7 @@ defmodule AOC2024.Day2 do
   # I covered all of the cases I could figure out, but was still a few examples (unknown to me at the time) short.
   # That's why I ended up with the loop above, and some functions like `direction` are more elaborate than they should be.
   def input do
-    "inputs/day_2"
+    "inputs/day2"
     |> File.stream!()
     |> parse_input()
   end

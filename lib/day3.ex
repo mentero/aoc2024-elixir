@@ -1,8 +1,8 @@
 defmodule AOC2024.Day3 do
-  def input do
-    "inputs/day_2"
-    |> File.stream!(1)
-  end
+  # Again, went more fancy than it needed to be.
+  # Instead of reading 1 byte at a time and streaming it,
+  # I should have load the whole string to memory as it wasn't that big,
+  # and then do some simple string manipulations, binary matching or regex
 
   def input(string) do
     {:ok, stream} = StringIO.open(string)
